@@ -1,0 +1,12 @@
+This SDK contains some software subject to open source licenses. In this document, we will introduce you to the terms that
+apply to these open source software components and indicate where you can find these license.
+
+1. \Middlewares\coremark
+CoreMark is a processor benchmark tool developed by EEMBC (Embedded Microprocessor Benchmark Consortium).
+CoreMark is freely available under a Apache License 2.0.The source code is derived from "https://github.com/eembc/coremark".
+You can find the license at this directory path.
+
+You can also access the applicable open source software terms and related statements at the following URL.
+Apache License : https://opensource.org/license/apache-2-0/
+MIT License : https://opensource.org/license/mit/
+BSD License : https://opensource.org/license/bsd-3-clause/

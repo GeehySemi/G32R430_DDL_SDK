@@ -1,0 +1,63 @@
+/*!
+ * @file        readme.txt
+ *
+ * @brief       This file is routine instruction
+ *
+ * @version     V1.0.0
+ *
+ * @date        2025-11-01
+ *
+ * @attention
+ *
+ *  Copyright (C) 2025 Geehy Semiconductor
+ *
+ *  You may not use this file except in compliance with the
+ *  GEEHY COPYRIGHT NOTICE (GEEHY SOFTWARE PACKAGE LICENSE).
+ *
+ *  The program is only for reference, which is distributed in the hope
+ *  that it will be useful and instructional for customers to develop
+ *  their software. Unless required by applicable law or agreed to in
+ *  writing, the program is distributed on an "AS IS" BASIS, WITHOUT
+ *  ANY WARRANTY OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the GEEHY SOFTWARE PACKAGE LICENSE for the governing permissions
+ *  and limitations under the License.
+ */
+
+&par Example Description
+
+This is an example of using SPI1's DMA mode for dual-board communication.
+The received data is printed via USART for debugging purposes.
+
+&par Hardware Description
+
+  SPI     BOARD1       BOARD2
+  NSS      PC6         PC6
+  SCK      PC5         PC5
+  MOSI     PC11        PC11
+  MISO     PC10        PC10
+
+USART2_TX(PD0)
+USART2_RX(PC12)
+
+  - USART2 configured as follow:
+  - BaudRate = 115200
+  - Word Length = USART_WordLength_8b
+  - Stop Bit = USART_StopBits_1
+  - Parity = USART_Parity_No
+  - Hardware flow control disabled (RTS and CTS signals)
+  - Receive and transmit enabled
+
+&par Directory contents
+
+  - SPI/SPI_TwoBoardsDMA/Source/main.c                             Main program implementing the test
+  - SPI/SPI_TwoBoardsDMA/Source/g32r4xx_int.c                      Interrupt handlers
+
+&par IDE environment
+
+  - MDK-ARM V5.40
+  - EWARM V9.60.2.5599
+  - Eclipse V4.35.0 RC1 &  clang version 19.1.1
+
+&par Hardware and Software environment
+
+  - This example runs on G32R430 TINY Devices.

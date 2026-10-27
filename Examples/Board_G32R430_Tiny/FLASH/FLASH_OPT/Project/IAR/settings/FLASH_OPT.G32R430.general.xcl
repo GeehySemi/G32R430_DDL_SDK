@@ -1,0 +1,13 @@
+C:\iar\ewarm-9.60.2\arm\bin\armPROC.dll
+
+ C:\iar\ewarm-9.60.2\arm\bin\armSIM2.dll
+
+ D:\Desktop\430\Work\G32R430_DDL_SDK\Examples\Board_G32R430_Tiny\FLASH\FLASH_OPT\Project\IAR\G32R430\Exe\FLASH_OPT.out
+
+ --plugin=C:\iar\ewarm-9.60.2\arm\bin\armLibSupportUniversal.dll
+
+ --device_macro=C:\iar\ewarm-9.60.2\arm/config/debugger/Geehy/G32R430.dmac
+
+ 
+
+

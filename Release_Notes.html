@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Release Notes for G32R430 DDL SDK</title>
+    <style>
+        body { font-family: "Segoe UI", Arial, sans-serif; font-size: 14px; background: #fff; color: #333; margin: 20px; }
+        h1 { font-size: 24px; color: #03234c; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h2 { font-size: 18px; color: #03234c; margin-top: 20px; }
+        .collapse { margin-bottom: 10px; }
+        .collapse input[type=checkbox] { display: none; }
+        .collapse label { cursor: pointer; color: #2cd1a2; font-weight: bold; display: block; background: #f5f5f5; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        .collapse label:hover { background: #e8e8e8; }
+        .collapse input[type=checkbox]:checked + label { background: #03234c; color: #fff; border-color: #03234c; }
+        .collapse .content { display: none; padding: 15px; border: 1px solid #ddd; border-top: none; border-radius: 0 0 4px 4px; }
+        .collapse input[type=checkbox]:checked ~ .content { display: block; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .header-title { text-align: center; margin-bottom: 30px; }
+        mark { background: #A6FFE6; color: #03234c; padding: 0.2em; }
+        code { font-family: Consolas, "Courier New", monospace; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<div class="header-title">
+    <h1>Release Notes for <mark>&nbsp;G32R430 DDL SDK&nbsp;</mark></h1>
+</div>
+
+<h1 id="update-history">Update History</h1>
+
+<!-- V1.0.4 / 03-August-2026 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v104-2026" checked>
+    <label for="collapse-v104-2026">V1.0.4 / 03-August-2026</label>
+    <div class="content">
+        <ul>
+            <li>Update device headers, SVD, and DDL drivers to align with the user manual (register naming, bit widths; remove obsolete blocks).</li>
+            <li>Update IAR/GCC/MDK linker scripts and default ITCM load strategy.</li>
+            <li>Upgrade Keil DFP pack to 1.0.4; refresh Flash algorithm and pyOCD target script.</li>
+            <li>Added DDL Driver API documentation (HTML/CHM).</li>
+            <li>Update Tiny example notes (J10 jumpers, clock lock) and header layout consistency.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.0.3 / 22-April-2026 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v103-2026">
+    <label for="collapse-v103-2026">V1.0.3 / 22-April-2026</label>
+    <div class="content">
+        <ul>
+            <li>Update GPIO device drivers.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.0.2 / 20-January-2026 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v102-2026">
+    <label for="collapse-v102-2026">V1.0.2 / 20-January-2026</label>
+    <div class="content">
+        <ul>
+            <li>Added Eclipse (Clang) project configuration support.</li>
+            <li>Update Flash and RCM device drivers.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.0.1 / 30-December-2025 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v101-2025">
+    <label for="collapse-v101-2025">V1.0.1 / 30-December-2025</label>
+    <div class="content">
+        <ul>
+            <li>Added ADC16 reference source configuration functions:
+                <code>DDL_ADC16_SetVerfInternal</code>,
+                <code>DDL_ADC16_SetVerfExternal</code>,
+                <code>DDL_ADC16_GetVerfStatus</code>.</li>
+            <li>Rename COMP register <code>VP_EN</code>/<code>VN_EN</code> to <code>VP_SEL</code>/<code>VN_SEL</code>, and fix input source macro definitions.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.0.0 / 30-October-2025 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v100-2025">
+    <label for="collapse-v100-2025">V1.0.0 / 30-October-2025</label>
+    <div class="content">
+        <ul>
+            <li>First Release version of G32R430 DDL SDK.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
